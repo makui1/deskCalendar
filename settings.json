@@ -1,0 +1,15 @@
+{
+    "enableSuffix": false,
+    "isPopUP": false,
+    "prefix": "",
+    "taskColor": {
+        "b": 100,
+        "g": 100,
+        "r": 100
+    },
+    "themeColor": {
+        "b": 100,
+        "g": 100,
+        "r": 100
+    }
+}

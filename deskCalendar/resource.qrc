@@ -1,2 +1,10 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/icons">
+        <file>btnNext.png</file>
+        <file>btnPrev.png</file>
+        <file>btnFilter.png</file>
+        <file>btnSettings.png</file>
+        <file>myicon.ico</file>
+    </qresource>
+    <qresource prefix="/doc"/>
+</RCC>

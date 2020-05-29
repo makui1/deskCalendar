@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,15 +25,36 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        global.cpp \
         main.cpp \
         calendar.cpp \
-        todoitem.cpp
+        monthviewitem.cpp \
+        settingdialog.cpp \
+        sqlitestorage.cpp \
+        storage.cpp \
+        todoedit.cpp \
+        todoitem.cpp \
+        todolist.cpp \
+        todoview.cpp
 
 HEADERS += \
         calendar.h \
-        todoitem.h
+        global.h \
+        monthviewitem.h \
+        settingdialog.h \
+        sqlitestorage.h \
+        storage.h \
+        todoedit.h \
+        todoitem.h \
+        todolist.h \
+        todoview.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resource.qrc
+
+RC_ICONS = myicon.ico
